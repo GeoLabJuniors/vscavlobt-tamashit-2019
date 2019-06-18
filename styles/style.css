@@ -1,3 +1,35 @@
+body::-webkit-scrollbar {
+    height: 3px;
+    background: white;
+    width: 10px;
+}
+
+body::-o-scrollbar {
+    height: 3px;
+    background:  #2699FB;
+    width: 10px;
+}
+
+body::-ms-scrollbar {
+    height: 3px;
+    background:  #2699FB;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #2699FB;
+    border-radius: 4px;
+}
+
+body::-o-scrollbar-thumb {
+    background: #2699FB;
+    border-radius: 4px;
+}
+body::-ms-scrollbar-thumb {
+    background: #2699FB;
+    border-radius: 4px;
+}
+
+
 /* Header Styles Start */
 .mainHeader {
     background: #34AFFF;
@@ -46,7 +78,7 @@
     width: 75%;
     display: flex;
      margin: 10px auto;
-    margin-top: 90px;
+    margin-top: 50px;
     justify-content: space-between;
 }
 .firstSec article {
@@ -114,14 +146,13 @@ color: #34AFFF;
     margin: 0 auto;
     margin-top: 30px;
     justify-content: space-between;
+    margin-bottom: 45px;
 }
 
 .bx-prev {
     display: none;
 }
-.bx-wrapper .bx-next {
-    background: url(../images/symbols/Forward%20arrow%20small.png)
-}
+
 
 .thrSec figure {
     align-self: flex-end;
