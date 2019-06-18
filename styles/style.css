@@ -1,0 +1,152 @@
+/* Header Styles Start */
+.mainHeader {
+    background: #34AFFF;
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 60px;
+    margin: 10px auto;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.mainHeader img {
+        
+    background-color: white;
+    height: 60px;
+    padding: 10px;
+    padding-right: 15px;
+     padding-left: 15px;
+    border-radius: 100%;
+    margin-left: 5%;
+   
+}
+.mainHeader nav {
+    width: 18%;
+    margin-right: 5%;
+}
+.mainHeader nav ul {
+    list-style: none;
+    display: flex;
+     
+    justify-content: space-between;
+}
+
+
+.mainHeader nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styles End */
+/* ======================================== */
+/* Texts Section Styles Start */
+
+.firstSec {
+    width: 75%;
+    display: flex;
+     margin: 10px auto;
+    margin-top: 90px;
+    justify-content: space-between;
+}
+.firstSec article {
+     width: 40%;
+}
+
+.firstSec article h2 {
+   
+    color: #34AFFF;
+    font-size: 40px;
+}
+.firstSec article p {
+color: #34AFFF;
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 29px;
+    border-bottom: solid 1px #BCE0FD;
+    padding-bottom: 30px;
+}
+.firstSec .paragraph {
+    width: 40%;
+    color: #4A4649;
+    font-size: 16px;    
+    line-height: 25px;
+    word-wrap: break-word;
+}
+
+/* Texts Section Styles End */
+/* ======================================== */
+/* Images Section Styles Start */
+.bx-wrapper { width: 76%; margin: 0 auto;
+    margin-top: 30px;}
+.secMain .secSec {
+   
+    display: flex;
+   
+    justify-content: space-between;
+    
+}
+.secMain .secSec .firstFig {
+    max-height: 252px;
+
+}
+
+.secMain .secSec .firstFig img {
+    height: 100%;
+}
+
+.secMain .secSec .secFig {
+    max-height: 252px;
+ 
+}
+
+.secMain .secSec .secFig img {
+    height: 100%;
+}
+/* Images Section Styles End */
+/* ======================================== */
+/* Socials And App Download Styles Start */
+
+.thrSec {
+    width: 72%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.bx-prev {
+    display: none;
+}
+.bx-wrapper .bx-next {
+    background: url(../images/symbols/Forward%20arrow%20small.png)
+}
+
+.thrSec figure {
+    align-self: flex-end;
+}
+
+.thrSec div {
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.thrSec div p {
+    color: #4A4649;
+    font-size: 14px;
+}
+
+.thrSec div a {
+    background: #2699FB;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
