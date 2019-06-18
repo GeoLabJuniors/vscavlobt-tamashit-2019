@@ -1,0 +1,79 @@
+/* Header Styles Start */
+.mainHeader {
+    background: #34AFFF;
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 60px;
+    margin: 10px auto;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.mainHeader img {
+        
+    background-color: white;
+    height: 60px;
+    padding: 10px;
+    padding-right: 15px;
+     padding-left: 15px;
+    border-radius: 100%;
+    margin-left: 5%;
+   
+}
+.mainHeader nav {
+    width: 18%;
+    margin-right: 5%;
+}
+.mainHeader nav ul {
+    list-style: none;
+    display: flex;
+     
+    justify-content: space-between;
+}
+
+
+.mainHeader nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styles End */
+
+/* ThrSec Styles Start */
+
+.thrSec {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.thrSec figure {
+    align-self: flex-end;
+}
+
+.thrSec div {
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.thrSec div p {
+    color: #4A4649;
+    font-size: 14px;
+}
+
+.thrSec div a {
+    background: #2699FB;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
