@@ -69,11 +69,7 @@ ul.bxslider {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
-}
+
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -90,18 +86,12 @@ ul.bxslider {
   left: 10px;
   background: url('images/controls.png') no-repeat 0 -32px;
 }
-.bx-wrapper .bx-prev:hover,
-.bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
-}
+
 .bx-wrapper .bx-next {
   right: 10px;
   background: url('../images/symbols/Forward%20arrow%20small@2x.png') no-repeat;
 }
-.bx-wrapper .bx-next:hover,
-.bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
-}
+
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   bottom: 5%;
