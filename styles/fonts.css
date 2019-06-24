@@ -1,0 +1,30 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "ALKSanet";
+  src: url("../fonts/alk-sanet.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/alk-sanet.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/alk-sanet.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/alk-sanet.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/alk-sanet.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/alk-sanet.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/alk-sanet.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BPGArial";
+  src: url("../fonts/bpgarial2009.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpgarial2009.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/bpgarial2009.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/bpgarial2009.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/bpgarial2009.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/bpgarial2009.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/bpgarial2009.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: Neue; src: url("../fonts/HelveticaNeue.ttc")
+}
