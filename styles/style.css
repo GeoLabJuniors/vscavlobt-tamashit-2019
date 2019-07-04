@@ -34,11 +34,17 @@ body::-ms-scrollbar-thumb {
 .mainHeader {
     background: #34AFFF;
     width: 84%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-radius: 60px;
     margin: 10px auto;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 0;
 }
 .mainHeader figure {background-color: white;
@@ -60,27 +66,40 @@ body::-ms-scrollbar-thumb {
 }
 .mainHeader nav ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
      
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+     
+        -ms-flex-pack: justify;
+     
+            justify-content: space-between;
 }
 
 
 .mainHeader nav ul li a {
     text-decoration: none;
     color: white;
+    font-family: BPGArial;
 }
-
+.mainHeader nav ul li a:hover {
+    opacity: 0.7;
+}
 /* Header Styles End */
 /* ======================================== */
 /* Texts Section Styles Start */
 
 .firstSec {
     width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
      margin: 10px auto;
     margin-top: 50px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .firstSec article {
      width: 40%;
@@ -119,9 +138,17 @@ color: #34AFFF;
     margin-top: 30px;}
 .secMain .secSec {
    
+    display: -webkit-box;
+   
+    display: -ms-flexbox;
+   
     display: flex;
    
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+   
+        -ms-flex-pack: justify;
+   
+            justify-content: space-between;
     
 }
 .secMain .secSec .firstFig {
@@ -147,10 +174,14 @@ color: #34AFFF;
 
 .thrSec {
     width: 72%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     margin-top: 30px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 45px;
 }
 
@@ -160,19 +191,27 @@ color: #34AFFF;
 
 
 .thrSec figure {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .thrSec div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     -o-flex-direction: column;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     height: 70px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .thrSec div p {
@@ -193,30 +232,46 @@ color: #34AFFF;
 .thrSec {
     width: 74%;
     padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     margin-top: 33px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 45px;
 }
 
 .thrSec figure {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 5%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .thrSec div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     -o-flex-direction: column;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     height: 70px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .thrSec div p {
@@ -258,12 +313,15 @@ color: #34AFFF;
     
     .firstSec {
         margin-top: 80px;
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         -o-flex-direction:column ;
-        flex-direction:column ;
-        align-items: center;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+                flex-direction:column ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .firstSec article {
     width: 78%;
@@ -331,11 +389,12 @@ color: #34AFFF;
         margin: 0 auto;
     }
     .secMain .secSec {
-        -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         -o-flex-direction: column;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     
     .thrSec {
