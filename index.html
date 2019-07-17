@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ვსწავლობთ სიტყვებით</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/jquery.bxslider.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/symbols/Component%2013%20%E2%80%93%202@2x.png">
-    
+    <script src="scripts/burger.js"></script>
+
 </head>
+
 <body>
     <header class="mainHeader">
-        <figure><img src="images/symbols/Component%2013%20%E2%80%93%202.png" alt=""></figure>
-        <nav>
+        <img src="images/Menu.png" onclick="showMenu()" alt="" style="height: 16px;width: 16px;" class="menuIcon">
+        <figure><a href="index.html"><img src="images/symbols/Component%2013%20%E2%80%93%202.png" alt=""></a> </figure>
+        <nav class="burger" id="burger">
+            <figure><a href="index.html"><img src="images/symbols/Component%2013%20%E2%80%93%202.png" onclick="showMenu()" alt="" class="logo2"></a>
+                <img src="images/Close.png" onclick="showMenu()" alt="" class="close"></figure>
             <ul>
-                <li><a href="" class="active">პროექტის შესახებ</a></li>
-                <li><a href="video.html">ვიდეო</a></li>
+                <li><a href="">პროექტის შესახებ</a></li>
+                <li><a href="video.html" class="active">ვიდეო</a></li>
+                <li><a href="video.html" class="active">დამატებითი რესურსი</a></li>
             </ul>
         </nav>
     </header>
@@ -30,38 +36,45 @@
             <p>ბევრი კი უბრალოდ სიტყვების შემთხვევითი გენერირებით დაიწერა</p>
         </article>
         <p class="paragraph">
-           ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე. შედეგად, ტექსტი ჩვეულებრივ ინგლისურს გავს.
+            ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე. შედეგად, ტექსტი ჩვეულებრივ ინგლისურს გავს.
         </p>
     </section>
     <section class="secMain">
         <h2 style="display: none"> Nikoloz Palagashvili</h2>
         <section class="secSec">
-         <h2 style="display: none"> Nikoloz Palagashvili</h2>
-        <figure class="firstFig"><img src="images/wallpapers/Image%201.png" alt=""></figure>
-        <figure class="secFig"><img src="images/wallpapers/Image%202.png" alt=""></figure>
-        </section><section class="secSec">
-         <h2 style="display: none"> Nikoloz Palagashvili</h2>
-        <figure class="firstFig"><img src="images/wallpapers/Image%201.png" alt=""></figure>
-        <figure class="secFig"><img src="images/wallpapers/Image%202.png" alt=""></figure>
+            <h2 style="display: none"> Nikoloz Palagashvili</h2>
+            <figure class="firstFig"><img src="images/wallpapers/Image%201.png" alt=""></figure>
+            <figure class="secFig"><img src="images/wallpapers/Image%202.png" alt=""></figure>
         </section>
-        
-        
+        <section class="secSec">
+            <h2 style="display: none"> Nikoloz Palagashvili</h2>
+            <figure class="firstFig"><img src="images/wallpapers/Image%201.png" alt=""></figure>
+            <figure class="secFig"><img src="images/wallpapers/Image%202.png" alt=""></figure>
+        </section>
+
+
     </section>
-    
+
     <footer class="thrSec">
         <figure>
-           <a href="#"> <img src="images/symbols/Instagram.png" alt="" title=""></a>
-          <a href="#">  <img src="images/symbols/Facebook.png" alt="" title=""></a>
+            <a href="#" class="partners"> 
+            <img src="images/partners/ForEveryChild_Signature_ShortContainer_Tight_RGB.PNG" alt="" title="">
+            </a>
+            <a href="#" class="partners"> 
+            <img src="images/partners/Ministry_of_Eduaction_of_Georgia_logo.png" alt="" title="">
+            </a>
+            <a href="#" class="partners">
+             <img src="images/partners/geolab_01.png" alt="geolab" title="">
+             </a>
         </figure>
-        
+
         <div>
             <p>ჩამოტვირთე აპლიკაცია მოცემული ღილაკის დაჭერით</p>
             <a target="_blank" href="https://drive.google.com/file/d/1sUFKmvc2esB-GVeif1B2fBOsHCTIBJ6Y/view?fbclid=IwAR33lT46guaXUT_JkIhhwlt1m3c9isBj0sx8BJ98SCpqohfNLJevmv5g9so">ჩამოტვირთე</a>
         </div>
     </footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="scripts/slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="scripts/slider.js"></script>
 
-</body>
-</html>
+</body></html>

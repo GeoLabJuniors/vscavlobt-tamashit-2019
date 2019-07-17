@@ -1,0 +1,168 @@
+body::-webkit-scrollbar {
+    height: 3px;
+    background: #fff;
+    width: 10px
+}
+
+body::-o-scrollbar {
+    height: 3px;
+    background: #2699fb;
+    width: 10px
+}
+
+body::-ms-scrollbar {
+    height: 3px;
+    background: #2699fb;
+    width: 10px
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #2699fb;
+    border-radius: 4px
+}
+
+body::-o-scrollbar-thumb {
+    background: #2699fb;
+    border-radius: 4px
+}
+
+body::-ms-scrollbar-thumb {
+    background: #2699fb;
+    border-radius: 4px
+}
+
+.active {
+    opacity: .7
+}
+
+
+.mainHeader {
+    background: #34afff;
+    width: 84%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 60px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0
+}
+
+.mainHeader figure {
+    background-color: #fff;
+    height: 55px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 100%;
+    margin-left: 5%
+}
+
+
+.mainHeader nav {
+    width: 92%;
+    margin-right: 5%
+}
+
+.mainHeader nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+}
+
+.mainHeader nav ul li {
+    padding: 0 20px;
+}
+
+.mainHeader nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: BPGArial
+}
+
+.mainHeader nav ul li a:hover {
+    opacity: .7
+}
+
+/*Mainheader burgering  stylees*/
+.mainHeader .menuIcon {
+    display: none;
+}
+
+.mainHeader .logo2,
+.mainHeader nav figure {
+    display: none;
+}
+
+/*Mainheader burgering  stylees end*/
+
+
+
+/*Mainheader burgering  stylees*/
+
+@media screen and (max-width:767px) and (min-width:319px) {
+    
+    .mainHeader {justify-content: center; position: relative;}
+    .mainHeader figure {margin-left: 0;}
+    .mainHeader .burger {
+        width: 100%;
+        /* margin-right: 5%; */
+        height: 100%;
+        position: fixed;
+        bottom: 0;
+        top: -100%;
+        left: 0;
+        right: 0;
+        background: #34AFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .4s;
+
+    }
+    .mainHeader .open {
+        top: 0;
+    }
+    .mainHeader .burger figure .logo2 {
+        background-color: #fff;
+        height: 35px;
+        border-radius: 100%;
+    }
+    .mainHeader .burger figure {
+        width: 55px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    
+    .mainHeader .logo2,
+    .mainHeader .burger figure {
+        display: block;
+    }
+
+    .mainHeader .logo2 {
+        height: 25px;
+        width: 30px;
+    }
+
+    
+    .mainHeader .menuIcon {display: block;position: absolute;left: 0;margin-left: 20px;}
+     .mainHeader .burger figure .close {position: absolute;top: 20px;right: 30px;}
+
+    .mainHeader .burger ul {
+        margin-top: 15%;
+        flex-direction: column;
+        height: 35%;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

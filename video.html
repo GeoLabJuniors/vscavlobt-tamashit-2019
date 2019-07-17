@@ -7,34 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ვსწავლობთ სიტყვებით</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <script src="scripts/burger.js"></script>
     
 </head>
 <body>
     <header class="mainHeader">
-        <figure><img src="images/symbols/Component%2013%20%E2%80%93%202.png" alt=""></figure>
-        <nav>
+        <img src="images/Menu.png" onclick="showMenu()" alt="" style="height: 16px;width: 16px;" class="menuIcon">
+        <figure><a href="index.html"><img src="images/symbols/Component%2013%20%E2%80%93%202.png" alt=""></a> </figure>
+        <nav class="burger" id="burger">
+            <figure><a href="index.html"><img src="images/symbols/Component%2013%20%E2%80%93%202.png" onclick="showMenu()" alt="" class="logo2"></a>
+            <img src="images/Close.png" onclick="showMenu()" alt="" class="close"></figure>
             <ul>
-                <li><a href="index.html">პროექტის შესახებ</a></li>
-                <li><a href="video.html" class="active">ვიდეო</a></li>
+                <li><a href="index.html"  class="active">პროექტის შესახებ</a></li>
+                <li><a href="video.html">ვიდეო</a></li>
+                <li><a href="resources.html"  class="active">დამატებითი რესურსი</a></li>
             </ul>
         </nav>
     </header>
     <div class="frame">
     <iframe width="100%" height="100%" style="margin-top: 25px" src="https://www.youtube.com/embed/JqLrUDut8Xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div>
-    <section class="thrSec">
+    <footer class="thrSec">
         <figure>
-            <a href="#"><img src="images/symbols/Instagram.png" alt="" title=""></a>
-            <a href="#"><img src="images/symbols/Facebook.png" alt="" title=""></a>
+            <a href="#" class="partners"> 
+            <img src="images/partners/ForEveryChild_Signature_ShortContainer_Tight_RGB.PNG" alt="" title="">
+            </a>
+            <a href="#" class="partners"> 
+            <img src="images/partners/Ministry_of_Eduaction_of_Georgia_logo.png" alt="" title="">
+            </a>
+            <a href="#" class="partners">
+             <img src="images/partners/geolab_01.png" alt="geolab" title="">
+             </a>
         </figure>
-        
+
         <div>
             <p>ჩამოტვირთე აპლიკაცია მოცემული ღილაკის დაჭერით</p>
             <a target="_blank" href="https://drive.google.com/file/d/1sUFKmvc2esB-GVeif1B2fBOsHCTIBJ6Y/view?fbclid=IwAR33lT46guaXUT_JkIhhwlt1m3c9isBj0sx8BJ98SCpqohfNLJevmv5g9so">ჩამოტვირთე</a>
         </div>
-    </section>
+    </footer>
 </body>
 </html>

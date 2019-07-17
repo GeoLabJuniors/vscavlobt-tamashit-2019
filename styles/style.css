@@ -42,6 +42,7 @@ body::-ms-scrollbar-thumb {
     justify-content: space-between;
     border-radius: 60px;
     margin: 10px auto;
+    margin-bottom: 40px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -58,13 +59,9 @@ body::-ms-scrollbar-thumb {
     margin-left: 5%
 }
 
-.mainHeader img {
-    width: 100%;
-    height: 100%
-}
 
 .mainHeader nav {
-    width: 22%;
+    width: 92%;
     margin-right: 5%
 }
 
@@ -75,8 +72,9 @@ body::-ms-scrollbar-thumb {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: flex-end;
 }
+.mainHeader nav ul li {padding: 0 20px;}
 
 .mainHeader nav ul li a {
     text-decoration: none;
@@ -87,6 +85,15 @@ body::-ms-scrollbar-thumb {
 .mainHeader nav ul li a:hover {
     opacity: .7
 }
+.mainHeader .menuIcon {
+    display: none;
+}
+
+.mainHeader .logo2,
+.mainHeader nav figure {
+    display: none;
+}
+
 
 .firstSec {
     width: 75%;
@@ -94,7 +101,6 @@ body::-ms-scrollbar-thumb {
     display: -ms-flexbox;
     display: flex;
     margin: 10px auto;
-    margin-top: 50px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -147,19 +153,25 @@ body::-ms-scrollbar-thumb {
 }
 
 .secMain .secSec .firstFig {
-    max-height: 252px
+    max-height: 252px;
+    width: 74%;
+            max-width: 74%;
 }
 
 .secMain .secSec .firstFig img {
-    height: 100%
+    height: 100%;
+        width: 100%;
 }
 
 .secMain .secSec .secFig {
-    max-height: 252px
+    width: 28%;
+    max-width: 28%;
+    max-height: 252px;
 }
 
 .secMain .secSec .secFig img {
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 
 .thrSec {
@@ -182,6 +194,16 @@ body::-ms-scrollbar-thumb {
 .thrSec figure {
     -ms-flex-item-align: end;
     align-self: flex-end
+}
+
+.thrSec figure .partners {
+    height: 40px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.thrSec figure .partners img{
+    height: 100%;
 }
 
 .thrSec div {
@@ -219,7 +241,7 @@ body::-ms-scrollbar-thumb {
 }
 
 .thrSec {
-    width: 74%;
+    width: 75%;
     padding-right: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -286,20 +308,14 @@ body::-ms-scrollbar-thumb {
     opacity: .7
 }
 
-@media screen and (max-width:1024px) {
-    .mainHeader nav {
-        width: 35%
-    }
-}
 
-@media screen and (max-width:992px) and (min-width:768px){
+
+@media screen and (max-width:992px) and (min-width:768px) {
     .mainHeader {
         width: 92%
     }
 
-    .mainHeader nav {
-        width: 35%
-    }
+
 
     .firstSec {
         margin-top: 80px;
@@ -364,31 +380,72 @@ body::-ms-scrollbar-thumb {
 }
 
 @media screen and (max-width:767px) and (min-width:319px) {
+    .mainHeader {justify-content: center; position: relative;}
+    .mainHeader figure {margin-left: 0;}
+    .mainHeader .burger {
+        width: 100%;
+        /* margin-right: 5%; */
+        height: 100%;
+        position: fixed;
+        z-index: 99992;
+        bottom: 0;
+        top: -100%;
+        left: 0;
+        right: 0;
+        background: #34AFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .4s;
+
+    }
+    .mainHeader .open {
+        top: 0;
+    }
+    .mainHeader .burger figure .logo2 {
+        background-color: #fff;
+        height: 35px;
+        border-radius: 100%;
+    }
+    .mainHeader .burger figure {
+        width: 55px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    
+    .mainHeader .logo2,
+    .mainHeader .burger figure {
+        display: block;
+    }
+
+    .mainHeader .logo2 {
+        height: 25px;
+        width: 30px;
+    }
+
+    
+    .mainHeader .menuIcon {display: block;position: absolute;left: 0;margin-left: 20px;}
+     .mainHeader .burger figure .close {position: absolute;top: 20px;right: 30px;}
+
+    .mainHeader .burger ul {
+        margin-top: 15%;
+        flex-direction: column;
+        height: 35%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
     .firstSec {
         width: 100%;
         margin-top: 20px;
         flex-direction: column;
-        align-items: center;
-    }
-    
-    .mainHeader nav ul {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: flex-end;
-}
-    
-    .mainHeader nav ul li:nth-child(2) {
-        margin-left: 15%;
-    }
-    
-    .firstSec article {
-        width: 70%;
+        align-items: center
     }
 
+
+    .firstSec article {
+        width: 70%
+    }
 
     .firstSec article h2 {
         font-size: 22px
@@ -405,19 +462,22 @@ body::-ms-scrollbar-thumb {
         margin-top: 20px;
         opacity: .54;
         font-size: 12px;
-            width: 70%;
+        width: 70%
     }
 
     .bx-wrapper .bx-viewport,
     .bx-wrapper .bx-wrapper {
         max-height: 525px
     }
-
+    
+    .bx-wrapper .bx-viewport {max-height: 250px;}
+    .secMain .secSec .firstFig {width: 100%;max-width: 100%;}
+    .secMain .secSec .secFig {width: 40%;max-width: 40%}
     .bx-wrapper .bx-controls-direction a {
-        bottom: 10%;
+        bottom: 5%;
         width: 10px;
         height: 7px;
-        right: 30%
+        right: 40%
     }
 
     .secMain .secSec .secFig {
@@ -436,26 +496,40 @@ body::-ms-scrollbar-thumb {
         -o-flex-direction: column;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        flex-direction: column
+        flex-direction: column;
+        align-items: center;
     }
 
     .thrSec {
-        margin-top: 24px
+        margin-top: 24px;
+        position: relative;
+        justify-content: flex-end;
     }
 
     .thrSec figure {
         position: absolute;
-        width: 20%
+        width: 30%;
+        left: 0;
+        
     }
+    
+    .thrSec figure .partners {
+        width: 40px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
 
     .thrSec div a {
         width: 116px;
+        height: 25px;
         font-size: 12px;
         text-align: center;
         padding: 0;
         padding: 5px 0;
-        margin-top: 27px;
-        margin-right: -5%
+        margin-top: 17px;
+        line-height: 15px;
+        margin-right: -5%;
     }
 
     .thrSec div p {
@@ -471,25 +545,6 @@ body::-ms-scrollbar-thumb {
         height: 223px
     }
 }
-@media screen and (max-width:400px) and (min-width:319px) {
-.mainHeader nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: BPGArial;
-    font-size: 15px;
-}
-    
-        .mainHeader nav ul li:nth-child(2) {
-        margin-left: 10%;
-    }
-}
 
-@media screen and (max-width:355px) and (min-width:319px) {
-    .mainHeader nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: BPGArial;
-    font-size: 12px;
-}
-    
-}
+
+
