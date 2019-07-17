@@ -34,8 +34,10 @@ body::-ms-scrollbar-thumb {
 .active {
     opacity: .7
 }
-
-
+.clear {
+    clear: both;
+}
+/*Header Styles Start*/
 .mainHeader {
     background: #34afff;
     width: 84%;
@@ -106,9 +108,94 @@ body::-ms-scrollbar-thumb {
 
 /*Mainheader burgering  stylees end*/
 
+.resource_first_sec {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.resource_first_sec .myDiv {
+    position: relative;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+}
+.resource_first_sec .myDiv::after {
+    content: "";
+    height: 2px;
+    width: 46%;
+    background: #BCE0FD;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.resource_first_sec .myDiv h2 {
+    color: #34AFFF;
+    font-family: ALKSanet;
+    font-size: 24px;
+    display: inline-block;
+    float: left;
+    width: 46%;
+    max-width: 46%;
+}
+
+.resource_first_sec .myDiv p {
+    float: right;
+    width: 52%;
+    max-width: 52%;
+    font-family: BPGArial;
+    font-size: 14px;
+    color: #4A4649;
+    opacity: 0.54;
+}
+
+.resource_first_sec .myDiv p .importantOfP {
+    color: #2699fb;
+    font-family: Neue;
+
+}
+
+.resource_first_sec .myDiv .link4download {
+    color: #2699fb;
+    font-family: BPGArial;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*Media-Mainheader burgering  stylees*/
 
 
-/*Mainheader burgering  stylees*/
+@media screen and (max-width:993px) and (min-width:768px) {
+    .resource_first_sec .myDiv h2 {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 70px;
+    }
+    
+    .resource_first_sec .myDiv {
+        margin-bottom: 100px;
+    }
+    .resource_first_sec .myDiv p {
+        width: 100%;
+        max-width: 100%;
+        text-align: justify;
+    }
+    
+    .resource_first_sec .myDiv p .importantOfP {
+        line-height: 23px;
+    }
+    
+    .resource_first_sec .myDiv .link4download {
+        bottom: -40px;
+    }
+    
+    .resource_first_sec .myDiv::after {
+        bottom: -70px;
+        width: 90%;
+    }
+}
+
 
 @media screen and (max-width:767px) and (min-width:319px) {
     
@@ -132,6 +219,7 @@ body::-ms-scrollbar-thumb {
     }
     .mainHeader .open {
         top: 0;
+        z-index: 9;
     }
     .mainHeader .burger figure .logo2 {
         background-color: #fff;
@@ -164,5 +252,35 @@ body::-ms-scrollbar-thumb {
         height: 35%;
         align-items: center;
         justify-content: space-around;
+    }
+    
+    .resource_first_sec .myDiv h2 {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    
+    .resource_first_sec .myDiv {
+        margin-bottom: 120px;
+    }
+    .resource_first_sec .myDiv p {
+        width: 100%;
+        max-width: 100%;
+        text-align: justify;
+    }
+    
+    .resource_first_sec .myDiv p .importantOfP {
+        line-height: 23px;
+    }
+    
+    .resource_first_sec .myDiv .link4download {
+        bottom: -40px;
+    }
+    
+    .resource_first_sec .myDiv::after {
+        bottom: -70px;
+        width: 90%;
     }
 }
