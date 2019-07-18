@@ -164,6 +164,46 @@ body::-ms-scrollbar-thumb {
 
 /*Media-Mainheader burgering  stylees*/
 
+.resources_footer {
+    width: 75%;
+    
+    min-height: 75px;
+    position: fixed;
+    bottom: 0;
+    left: 12.5%;
+    right: 12.5%;
+    background: #FFFFFF;
+
+    
+    
+}
+
+
+.resources_footer figure {
+    display: flex;
+        position: absolute;
+        width: 5%;
+        left: 0;
+   bottom: 20px;
+    }
+    
+.resources_footer figure .partners {
+        height: 40px;
+    width: 60px;
+    margin-right: 20px;
+    }
+
+.resources_footer figure .partners img {
+   
+    height: 100%;
+}
+
+
+.resources_footer .totop {
+    float: right;
+    transform: rotate(180deg);
+
+}
 
 @media screen and (max-width:993px) and (min-width:768px) {
     .resource_first_sec .myDiv h2 {
