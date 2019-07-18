@@ -216,6 +216,12 @@ body::-ms-scrollbar-thumb {
     transform: rotate(0);
 }
 
+.resources_footer .totop2, .resources_footer .totop {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
 @media screen and (max-width:993px) and (min-width:768px) {
     .resource_first_sec .myDiv h2 {
         display: block;
