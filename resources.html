@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ka">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="" />
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="mainHeader">
+    <header class="mainHeader" id="mainHeader">
         <img src="images/Menu.png" onclick="showMenu()" alt="" style="height: 16px;width: 16px;" class="menuIcon">
         <figure><a href="index.html"><img src="images/symbols/Component%2013%20%E2%80%93%202.png" alt=""></a> </figure>
         <nav class="burger" id="burger">
@@ -207,7 +207,9 @@
              <img src="images/partners/geolab_01.png" alt="geolab" title="">
              </a>
         </figure>
-        <a href="" target="_top" class="totop"><img src="images/symbols/arrow_down.png" alt="" ></a>
+        <button class="totop" id="myBtn" onclick="topFunction()"><img src="images/symbols/arrow_down.png" alt=""></button>
+        <button class="totop2" id="myBtn2" onclick="bottomFunction()"><img src="images/symbols/arrow_down.png" alt=""></button>
         
     </footer>
+    <script src="scripts/scrolling.js"></script>
 </body></html>

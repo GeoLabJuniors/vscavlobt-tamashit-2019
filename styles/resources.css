@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     height: 3px;
     background: #fff;
@@ -202,7 +206,14 @@ body::-ms-scrollbar-thumb {
 .resources_footer .totop {
     float: right;
     transform: rotate(180deg);
+    display: none;
 
+}
+
+.resources_footer .totop2 {
+    float: right;
+    display: none;
+    transform: rotate(0);
 }
 
 @media screen and (max-width:993px) and (min-width:768px) {
