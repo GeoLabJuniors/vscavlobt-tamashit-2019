@@ -117,7 +117,9 @@ body::-ms-scrollbar-thumb {
     font-size: 40px;
     font-family: ALKSanet
 }
-
+.firstSec article .goDown {
+    display: none;
+}
 .firstSec article p {
     color: #34afff;
     font-style: italic;
@@ -318,7 +320,9 @@ body::-ms-scrollbar-thumb {
 .active {
     opacity: .7
 }
-
+ .firstSec article .firstPart {
+        border: none;
+    }
 
 
 @media screen and (max-width:992px) and (min-width:768px) {
@@ -348,10 +352,40 @@ body::-ms-scrollbar-thumb {
     .firstSec article p {
         margin-top: 30px
     }
-
+    
+    .firstSec article .firstPart {
+        position: relative;
+    }
+    
+    .firstSec article .firstPart {
+        border: none;
+    }
+    .firstSec article .goDown {
+        display: block;
+        border: none;
+        outline: none;
+        background: transparent;
+        right: 0;
+        position: absolute;
+        bottom: -5%;
+    }
+    .open .goDown2 {
+        border: none;
+        outline: none;
+        background: transparent;
+float: right;
+        margin-top: 5%;
+    }
     .firstSec .paragraph {
         width: 78%;
-        margin-top: 50px
+        margin-top: 50px;
+            height: 0;
+        overflow: hidden;
+    }
+    
+    .firstSec .paragraph.open {
+        height: auto;
+        
     }
 
     .secMain .secSec .firstFig,
@@ -455,7 +489,7 @@ body::-ms-scrollbar-thumb {
 
 
     .firstSec article {
-        width: 70%
+        width: 78%
     }
 
     .firstSec article h2 {
@@ -475,7 +509,39 @@ body::-ms-scrollbar-thumb {
         font-size: 12px;
         width: 70%
     }
-
+.firstSec article .firstPart {
+        border: none;
+    position: relative;
+    opacity: 0.6;
+    font-size: 12px;
+    }
+    .firstSec article .goDown {
+        display: block;
+        border: none;
+        outline: none;
+        background: transparent;
+        right: 0;
+        position: absolute;
+        bottom: -5%;
+    }
+    .open .goDown2 {
+        border: none;
+        outline: none;
+        background: transparent;
+float: right;
+        margin-top: 5%;
+    }
+    .firstSec .paragraph {
+        width: 78%;
+        margin-top: 50px;
+            height: 0;
+        overflow: hidden;
+    }
+    
+    .firstSec .paragraph.open {
+        height: auto;
+        
+    }
     .bx-wrapper .bx-viewport,
     .bx-wrapper .bx-wrapper {
         max-height: 525px
