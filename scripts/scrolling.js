@@ -20,11 +20,9 @@ function topFunction() {
  document.body.scrollTop = 0; // For Safari
  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
+ var number = 200
 function bottomFunction() {
-    var number = 200
-    
-   
+
  document.body.scrollTop =  number// For Safari
  document.documentElement.scrollTop =  number  // For Chrome, Firefox, IE and Opera
     number = number + 200

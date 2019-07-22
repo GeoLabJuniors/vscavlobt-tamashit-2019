@@ -127,14 +127,22 @@ body::-ms-scrollbar-thumb {
     font-family: Neue;
     opacity: .54
 }
-
+.firstSec article .firstPart {
+        color: #4a4649;
+    font-size: 16px;
+    line-height: 25px;
+    word-wrap: break-word;
+    font-family: BPGArial;
+    margin-top: 30px;
+}
 .firstSec .paragraph {
     width: 40%;
     color: #4a4649;
     font-size: 16px;
     line-height: 25px;
     word-wrap: break-word;
-    font-family: BPGArial
+    font-family: BPGArial;
+        opacity: 0.6;
 }
 
 .bx-wrapper {
