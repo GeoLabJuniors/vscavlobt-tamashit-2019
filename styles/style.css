@@ -59,7 +59,9 @@ body::-ms-scrollbar-thumb {
     margin-left: 5%
 }
 
-
+.mainHeader figure a img {
+    width: 30px;
+}
 .mainHeader nav {
     width: 92%;
     margin-right: 5%
