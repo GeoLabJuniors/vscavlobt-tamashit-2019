@@ -146,6 +146,7 @@ body::-ms-scrollbar-thumb {
     word-wrap: break-word;
     font-family: BPGArial;
         opacity: 0.6;
+
 }
 .firstSec .paragraph .goDown2 {
     display: none;
@@ -218,7 +219,10 @@ body::-ms-scrollbar-thumb {
 .thrSec figure .partners img{
     height: 100%;
 }
-
+.thrSec figure .partners:nth-child(3) {
+    height: 35px;
+    margin-top: 2px;
+}
 .thrSec div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -323,6 +327,7 @@ body::-ms-scrollbar-thumb {
 }
  .firstSec article .firstPart {
         border: none;
+
     }
 
 
