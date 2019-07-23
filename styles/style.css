@@ -117,12 +117,11 @@ body::-ms-scrollbar-thumb {
     font-size: 40px;
     font-family: ALKSanet
 }
-.firstSec article .goDown {
+.firstSec article .goDown  {
     display: none;
 }
 .firstSec article p {
     color: #34afff;
-    font-style: italic;
     margin-top: 50px;
     font-size: 22px;
     line-height: 29px;
@@ -148,7 +147,9 @@ body::-ms-scrollbar-thumb {
     font-family: BPGArial;
         opacity: 0.6;
 }
-
+.firstSec .paragraph .goDown2 {
+    display: none;
+}
 .bx-wrapper {
     width: 76%;
     margin: 0 auto;
@@ -450,7 +451,7 @@ float: right;
     .mainHeader .burger figure .logo2 {
         background-color: #fff;
         height: 35px;
-        border-radius: 100%;
+
     }
     .mainHeader .burger figure {
         width: 55px;
