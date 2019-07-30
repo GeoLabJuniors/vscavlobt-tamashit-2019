@@ -198,6 +198,12 @@ body::-ms-scrollbar-thumb {
     width: 60px;
     margin-right: 20px;
     }
+.resources_footer figure .partners:nth-child(3) {
+    height: 35px;
+    margin-top: 2px;
+}
+
+
 
 .resources_footer figure .partners img {
    
@@ -284,7 +290,7 @@ body::-ms-scrollbar-thumb {
     .mainHeader .burger figure .logo2 {
         background-color: #fff;
         height: 35px;
-        border-radius: 100%;
+        
     }
     .mainHeader .burger figure {
         width: 55px;

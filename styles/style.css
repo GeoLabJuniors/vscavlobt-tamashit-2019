@@ -601,6 +601,11 @@ float: right;
         height: 25px;
         margin-right: 5px;
     }
+    .thrSec figure .partners:nth-child(3) {
+    height: 22px;
+    margin-top: 2px;
+        margin-left: 3px;
+}
 
 
     .thrSec div a {
